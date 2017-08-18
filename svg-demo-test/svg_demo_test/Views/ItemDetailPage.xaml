@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="svg_demo_test.Views.ItemDetailPage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:forms="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    Title="{Binding Title}">
+    <StackLayout
+        Padding="15"
+        Spacing="20">
+
+        <forms:SvgCachedImage
+            HeightRequest="200"
+            HorizontalOptions="Center"
+            Source="{Binding Item.IconPath, Converter={StaticResource svgc}}"
+            WidthRequest="200" />
+
+        <Label
+            FontSize="Medium"
+            Text="{Binding Item.Text}" />
+        <Label
+            FontSize="Small"
+            Text="{Binding Item.Description}" />
+    </StackLayout>
+</ContentPage>

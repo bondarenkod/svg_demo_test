@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6015F4FE-6718-470E-A0DF-4DB0A18E3FD2}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IconsPackDemo</RootNamespace>
+    <AssemblyName>IconsPackDemo</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile111</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="DummyReferenceClass.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\001-laborers-1.svg" />
+    <EmbeddedResource Include="Resources\002-laborers.svg" />
+    <EmbeddedResource Include="Resources\003-gloves.svg" />
+    <EmbeddedResource Include="Resources\004-boots.svg" />
+    <EmbeddedResource Include="Resources\005-roll-paint-brush.svg" />
+    <EmbeddedResource Include="Resources\006-tool-box.svg" />
+    <EmbeddedResource Include="Resources\007-cone.svg" />
+    <EmbeddedResource Include="Resources\008-color-palette.svg" />
+    <EmbeddedResource Include="Resources\009-shovel.svg" />
+    <EmbeddedResource Include="Resources\010-barrier.svg" />
+    <EmbeddedResource Include="Resources\011-tank-truck.svg" />
+    <EmbeddedResource Include="Resources\012-steamroller.svg" />
+    <EmbeddedResource Include="Resources\013-forklift.svg" />
+    <EmbeddedResource Include="Resources\014-truck-1.svg" />
+    <EmbeddedResource Include="Resources\015-truck.svg" />
+    <EmbeddedResource Include="Resources\016-excavator-2.svg" />
+    <EmbeddedResource Include="Resources\017-excavator-1.svg" />
+    <EmbeddedResource Include="Resources\018-demolition.svg" />
+    <EmbeddedResource Include="Resources\019-crane-2.svg" />
+    <EmbeddedResource Include="Resources\020-excavator.svg" />
+    <EmbeddedResource Include="Resources\021-window.svg" />
+    <EmbeddedResource Include="Resources\022-door.svg" />
+    <EmbeddedResource Include="Resources\023-construction-vest.svg" />
+    <EmbeddedResource Include="Resources\024-construction-2.svg" />
+    <EmbeddedResource Include="Resources\025-hydraulic-breaker.svg" />
+    <EmbeddedResource Include="Resources\026-glasses.svg" />
+    <EmbeddedResource Include="Resources\027-hacksaw.svg" />
+    <EmbeddedResource Include="Resources\028-nail.svg" />
+    <EmbeddedResource Include="Resources\029-trowel.svg" />
+    <EmbeddedResource Include="Resources\030-crane-1.svg" />
+    <EmbeddedResource Include="Resources\031-saw.svg" />
+    <EmbeddedResource Include="Resources\032-plumber.svg" />
+    <EmbeddedResource Include="Resources\033-brick.svg" />
+    <EmbeddedResource Include="Resources\034-sign.svg" />
+    <EmbeddedResource Include="Resources\035-wheelbarrow.svg" />
+    <EmbeddedResource Include="Resources\036-pliers.svg" />
+    <EmbeddedResource Include="Resources\037-construction-1.svg" />
+    <EmbeddedResource Include="Resources\038-demolition-crane.svg" />
+    <EmbeddedResource Include="Resources\039-crane.svg" />
+    <EmbeddedResource Include="Resources\040-paint-brush.svg" />
+    <EmbeddedResource Include="Resources\041-hammer.svg" />
+    <EmbeddedResource Include="Resources\042-screwdriver.svg" />
+    <EmbeddedResource Include="Resources\043-measuring-tape.svg" />
+    <EmbeddedResource Include="Resources\044-house.svg" />
+    <EmbeddedResource Include="Resources\045-building.svg" />
+    <EmbeddedResource Include="Resources\046-construction.svg" />
+    <EmbeddedResource Include="Resources\047-house-sketch.svg" />
+    <EmbeddedResource Include="Resources\048-paint-bucket.svg" />
+    <EmbeddedResource Include="Resources\049-drill.svg" />
+    <EmbeddedResource Include="Resources\050-blowtorch.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\svgdemo.svg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
